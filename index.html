@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritika Shivaliya - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    nav .menu-icon {
+      display: none;
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      color: #2c3e50;
+      border-left: 5px solid #1abc9c;
+      padding-left: 10px;
+      font-size: 1.8rem;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #34495e;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+      }
+      nav ul.active {
+        display: flex;
+      }
+      nav ul li {
+        margin: 10px 0;
+        text-align: center;
+      }
+      nav .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ritika Shivaliya</h1>
+    <p>Computer Science Engineering Student</p>
+  </header>
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="menu">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Driven and meticulous Computer Science and Engineering student with solid knowledge of programming, algorithms, and software development. Looking for prospects to utilize my technical skills and add value to innovative projects while obtaining hands-on experience in the tech industry.</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>B.Tech (Computer Science Engineering)</strong><br>Hemvati Nandan Bahuguna Garhwal University, Srinagar, Uttarakhand<br>2022 - 2026</p>
+      <p><strong>Intermediate (Class 12)</strong><br>Jawahar Navodaya Vidyalaya, Bijnor<br>Percentage: 94.2%</p>
+    </section>
+    <section id="skills">
+      <h2>Skills & Certifications</h2>
+      <ul>
+        <li>Python</li>
+        <li>C/C++</li>
+        <li>Java</li>
+        <li>Data Structures and Algorithms (DSA)</li>
+        <li>DBMS (SQL)</li>
+        <li>Computer Graphics</li>
+        <li>Penetration Testing</li>
+        <li>Ethical Hacking</li>
+      </ul>
+    </section>
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <p><strong>Ethical Hacking and Penetration Testing Intern</strong><br>CDAC-Noida<br>16 Sep 2024 - 31 Oct 2024</p>
+      <ul>
+        <li>Worked on implementing a Cowire Honeypot to mimic a vulnerable SSH system and attract attackers.</li>
+        <li>Demonstrated the use of honeypots in cybersecurity defense and deception strategies.</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <h3>Exploring Cyber Deception: Implementing Cowrie Honeypots</h3>
+        <p>Developed a honeypot system using Cowire to emulate a vulnerable SSH server. Demonstrated how honeypots can be used as part of cybersecurity defense strategies.</p>
+      </div>
+      <div>
+        <h3>Snake Game using C++</h3>
+        <p>Developed a classic Snake Game using C++ to demonstrate proficiency in object-oriented programming (OOP), data structures, and game logic. Features include a snake that grows in length as it consumes food, with the objective of achieving the highest score without colliding with walls or itself.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:ritikashivaliya94@gmail.com">ritikashivaliya94@gmail.com</a></p>
+      <p>Phone: +91 7819881452</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ritika-shivaliya" target="_blank">linkedin.com/in/ritika-shivaliya</a></p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2023 Ritika Shivaliya. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
